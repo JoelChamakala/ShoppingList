@@ -17,17 +17,17 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        let item1 = Item(name: "Milk")
-        let item2 = Item(name: "Eggs")
+        let item1 = Item(name: "Milk", quantity: 1)
+        let item2 = Item(name: "Eggs", quantity: 12)
         items = [item1, item2]
-        let item3 = Item(name: "Bread")
+        let item3 = Item(name: "Bread", quantity: 5)
         items.append(item3)
 
     }
 
     @IBAction func addNewItemButtonPressed(_ sender: Any) {
-        if let newItemName = newItemTextField.text{
-            let newItem = Item(name: newItemName)
+        if let newItemName = newItemTextField.text, newItemName != ""{
+            let newItem = Item(name: newItemName, quantity: 1)
             items.append(newItem)
             tableView.reloadData()
         }
@@ -36,11 +36,15 @@ class ViewController: UIViewController, UITableViewDataSource {
         return items.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell"){
         let currentItemName = items[indexPath.row].name
+        let currentItemQuantity = items[indexPath.row].quantity
         cell.textLabel?.text = currentItemName
+            cell.detailTextLabel?.text = "Quaantity: \(currentItemQuantity)"
         return cell
+        } else {
+            return UITableViewCell()
+        }
     }
-    
 }
 
