@@ -13,6 +13,7 @@
 		942279DD220DF10500C399A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942279DC220DF10500C399A5 /* Assets.xcassets */; };
 		942279E0220DF10500C399A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942279DE220DF10500C399A5 /* LaunchScreen.storyboard */; };
 		9423F60E2213392B00E2459E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9423F60D2213392B00E2459E /* Item.swift */; };
+		949F48072215DCBC001FC4FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F48062215DCBC001FC4FF /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		942279DF220DF10500C399A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942279E1220DF10500C399A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9423F60D2213392B00E2459E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		949F48062215DCBC001FC4FF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				942279D7220DF10200C399A5 /* ViewController.swift */,
 				9423F60D2213392B00E2459E /* Item.swift */,
 				942279D9220DF10200C399A5 /* Main.storyboard */,
+				949F48062215DCBC001FC4FF /* SecondViewController.swift */,
 				942279DC220DF10500C399A5 /* Assets.xcassets */,
 				942279DE220DF10500C399A5 /* LaunchScreen.storyboard */,
 				942279E1220DF10500C399A5 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949F48072215DCBC001FC4FF /* SecondViewController.swift in Sources */,
 				942279D8220DF10200C399A5 /* ViewController.swift in Sources */,
 				9423F60E2213392B00E2459E /* Item.swift in Sources */,
 				942279D6220DF10200C399A5 /* AppDelegate.swift in Sources */,
